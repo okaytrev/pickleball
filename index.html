@@ -70,25 +70,28 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form action="https://script.google.com/macros/s/AKfycbzybhkQMIbKBOltiTiWUY94IEFy-OOaPx2zB6_XaECczIsBsg5JXh-nCmhp-QPnwzfm/exec" method="post">
+								<form class=gform action="https://script.google.com/macros/s/AKfycbzybhkQMIbKBOltiTiWUY94IEFy-OOaPx2zB6_XaECczIsBsg5JXh-nCmhp-QPnwzfm/exec" method="post">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" required/>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="text" name="email" id="email" required/>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="message" id="message" rows="4" required></textarea>
 										</div>
 									</div>
+									<div style="display:none" class="thankyou_message">
+									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input id="form_button" type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
+									<img id="loading" src="./images/load.gif" width="15" height="15">
 								</form>
 								<ul class="icons">
 								</ul>
