@@ -34,6 +34,10 @@ body {
 	
 }
 
+#loading {
+    visibility: hidden;
+}
+
 .fa-solid {
 	color: #ffffff;
 }
@@ -71,9 +75,7 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
-#loading {
-    visibility: hidden;
-}
+
 
 input, select, textarea {
 	-moz-appearance: none;
